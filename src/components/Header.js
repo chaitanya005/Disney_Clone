@@ -4,8 +4,7 @@ import { auth, provider } from '../firebase'
 import { 
     setUser, 
     setSignOut, 
-    getUserName, 
-    getUserEmail, 
+    getUserName,  
     getUserPhoto
 } from '../features/user/userSlice'
 import { useSelector, useDispatch } from 'react-redux'
@@ -16,7 +15,6 @@ const  Header = () => {
     const dispatch = useDispatch()
     const history = useHistory()
     const userName = useSelector(getUserName)
-    const userEmail = useSelector(getUserEmail)
     const userPhoto = useSelector(getUserPhoto)
 
     useEffect(() => {
